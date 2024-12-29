@@ -2,7 +2,7 @@
 
 spin off of [CatMario](https://www.youtube.com/watch?v=ejyYNrPXs3o)
 
-# ThisisNotMario1
+## ThisisNotMario1
 
 spin off of [CatMario](https://www.youtube.com/watch?v=ejyYNrPXs3o)
 
@@ -12,7 +12,7 @@ Source code might be ugh....
 
 https://en.wikipedia.org/wiki/Flappy_Bird
 
-## GamePlay on YouTube
+### GamePlay on YouTube
 
 [变态坑爹版马里奥 我大概死了589次就通关了](https://www.youtube.com/watch?v=KdCfoteiJ1c&lc=UgwPzWHwp6XW6MXX1TV4AaABAg)
 
