@@ -2,6 +2,45 @@
 
 spin off of [CatMario](https://www.youtube.com/watch?v=ejyYNrPXs3o)
 
+## Game Overview
+
+ThisisNotMario2 is a platformer game with elements like enemies, coins, and player movement. The objective of the game is to navigate through various levels, avoid obstacles, defeat enemies, and collect coins. The game includes various assets and scripts to enhance the gameplay experience.
+
+## Objective
+
+The main objective of ThisisNotMario2 is to complete all levels by reaching the end while avoiding obstacles and enemies. Players can collect coins to increase their score and unlock new levels.
+
+## Basic Controls
+
+- Move Left: Arrow Left or 'A' key
+- Move Right: Arrow Right or 'D' key
+- Jump: Spacebar or 'W' key
+- Attack: 'Z' key
+
+## Repository Contents
+
+The repository contains various assets and scripts for the game. Below are some key files and their purposes:
+
+### Assets/Scenes/Stage2.unity
+
+This file contains the game scene setup for Stage 2. It includes the layout of the level, placement of enemies, coins, and other game objects.
+
+### Assets/Scripts/Player/PlayerMovement.cs
+
+This script handles player movement, including walking, jumping, and interactions with the environment. It also manages the player's state, such as standing, walking, jumping, and death.
+
+### Assets/Scripts/Enemies/TrollEvent/ActiveEnemies.cs
+
+This script manages enemy activation. It activates enemies when the player enters a specific area or triggers an event.
+
+### Assets/Scripts/Event/GameEventBroker.cs
+
+This script handles game events like player death and respawn. It manages the communication between different game objects and triggers appropriate actions based on events.
+
+### Assets/Scripts/Music/BackgroundMusic.cs
+
+This script manages background music. It plays random background music tracks during the game and ensures a seamless audio experience.
+
 ## ThisisNotMario1
 
 spin off of [CatMario](https://www.youtube.com/watch?v=ejyYNrPXs3o)
