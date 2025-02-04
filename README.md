@@ -43,11 +43,11 @@ This script manages background music. It plays random background music tracks du
 
 ## ThisisNotMario1
 
-spin off of [CatMario](https://www.youtube.com/watch?v=ejyYNrPXs3o)
+[Ss]pin off of [CatMario](https://www.youtube.com/watch?v=ejyYNrPXs3o)
 
 Source code might be ugh....
 
-任天堂送你上天堂！(cough blood!)
+任[由]天堂送你上天堂！(cough blood!)
 
 https://en.wikipedia.org/wiki/Flappy_Bird
 
