@@ -13,7 +13,7 @@ public class HorizontalMove : MonoBehaviour {
             transform.localScale.y,
             transform.localScale.z);
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(speedX, 0f);
+        rb.linearVelocity = new Vector2(speedX, 0f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -27,7 +27,7 @@ public class HorizontalMove : MonoBehaviour {
                 transform.localScale.y,
                 transform.localScale.z);
                 rb = GetComponent<Rigidbody2D>();
-                rb.velocity = new Vector2(-1f * rb.velocity.x, 0f);
+                rb.linearVelocity = new Vector2(-1f * rb.linearVelocity.x, 0f);
             }
             
         }

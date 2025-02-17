@@ -16,7 +16,7 @@ public class TouchThenBlock : MonoBehaviour {
         if (collision.gameObject.tag == "Player")
         {
             sr.enabled = true;
-            collision.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, -1f * knockBackStrength);
+            collision.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0f, -1f * knockBackStrength);
             GameEventBroker.FreezePlayer();
         }
     }

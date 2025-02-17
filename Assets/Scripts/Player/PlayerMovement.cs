@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour {
             Vector2 direction = Vector2.down;
 
             var hit = Physics2D.Raycast(position, direction, GroundDistance, GroundLayer);
-            if (hit.collider != null && Rb.velocity.y <= 0f) {
+            if (hit.collider != null && Rb.linearVelocity.y <= 0f) {
                 return true;
             }
             return false;
@@ -103,7 +103,7 @@ public class PlayerMovement : MonoBehaviour {
                     PlayerState = PlayerState.walk;
                     SetHorizontalMovemnet();
                 } else {
-                    Rb.velocity = new Vector2(0f, Rb.velocity.y);
+                    Rb.linearVelocity = new Vector2(0f, Rb.linearVelocity.y);
                 }
                 if (Input.GetKeyDown(KeyCode.Space)) {
                     Jump();
@@ -115,7 +115,7 @@ public class PlayerMovement : MonoBehaviour {
                 else {
                     PlayerState = PlayerState.stand;
                     Animator.SetInteger("walk", 0);
-                    Rb.velocity = new Vector2(0f, Rb.velocity.y);
+                    Rb.linearVelocity = new Vector2(0f, Rb.linearVelocity.y);
                 }
                 if (Input.GetKeyDown(KeyCode.Space)) {
                     Jump();
@@ -150,7 +150,7 @@ public class PlayerMovement : MonoBehaviour {
     void SetHorizontalMovemnet()
     {
         Animator.SetInteger("walk", (int)(InputX / Mathf.Abs(InputX)));
-        Rb.velocity = new Vector2(SpeedX * InputX, Rb.velocity.y);
+        Rb.linearVelocity = new Vector2(SpeedX * InputX, Rb.linearVelocity.y);
 
     }
     void Jump()
@@ -173,7 +173,7 @@ public class PlayerMovement : MonoBehaviour {
             SoundController.Play(DeathSound);
             transform.position = new Vector3(transform.position.x, transform.position.y, -5f);
             Animator.SetBool("isDeath", true);
-            Rb.velocity = new Vector2(0f, 0f);
+            Rb.linearVelocity = new Vector2(0f, 0f);
             Rb.AddForce(new Vector2(0, Rb.mass * 40f), ForceMode2D.Impulse);
             foreach (CapsuleCollider2D capsuleCollider in GetComponents<CapsuleCollider2D>())
             {
